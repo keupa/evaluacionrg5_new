@@ -1,0 +1,40 @@
+body{
+    font-family: "Lucida Console", Courier, monospace;
+    box-sizing: border-box;
+    margin: 2rem 5rem 0 5rem;
+}
+
+.addform{
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+}
+
+input[type=text]{
+    margin-bottom: 1rem;
+    border-radius: .2rem;
+}
+
+.submit{
+    background-color: #ffb187;
+    border: none;
+    width: 30%;
+    border-radius: .5rem;
+    padding: .5rem .8rem .5rem .8rem;
+    font-size: 1rem;
+}
+
+.submit:hover{
+    background-color: #ff975e;
+}
+
+table{
+    width: 100%
+    border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
