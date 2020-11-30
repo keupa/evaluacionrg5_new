@@ -14,7 +14,7 @@ def home():
 def show_employee_list():
     rows = []
     path = 'data/employees.csv'
-    with open(path, 'r') as table:
+    with open(path, 'r', encoding = "ISO-8859-1") as table:
         reader = csv.DictReader(table)
         for row in reader:
             rows.append(row)
@@ -38,7 +38,7 @@ def add_employee():
             for row in reader:
                 employees.append(row)
 
-        with open(path, 'a', newline="") as new_line:
+        with open(path, 'a', newline="", encoding="ISO-8859-1") as new_line:
             data = csv.writer(new_line)
             data.writerow([(int(row[0]) + 1), first_name, last_name, email, ip_address])
         return redirect(url_for('show_employee_list'))

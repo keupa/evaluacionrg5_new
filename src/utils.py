@@ -3,7 +3,7 @@ from flask import jsonify
 
 def convert_csv_to_json():
     path = 'data/employees.csv'
-    with open (path, 'r') as file:
+    with open (path, 'r', encoding="ISO-8859-1") as file:
         reader = csv.reader(file)
         data_list = list()
         for row in reader:
