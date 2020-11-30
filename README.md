@@ -39,7 +39,7 @@ Consists of a Python app that allows you to read a CSV file as JSON, add a new e
   
 -------------
 
-Thanks to Javier Zepda & the Enroute team :-) 
+Thanks to Javier Zepeda & the Enroute team :-) 
  
  
   
